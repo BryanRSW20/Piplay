@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="piplay_bg">#2B2B2B</color>
     <color name="piplay_txt_color">#8C52FF</color>
+    <color name="piplay_bg_light">#3C3C3C</color>
 </resources>
