@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/piplay_bg"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
 
     <TextView
         android:id="@+id/textView11"
@@ -167,9 +168,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
-                android:background="@drawable/geraldo"
                 android:scaleType="centerCrop"
-                tools:srcCompat="@drawable/geraldo" />
+                android:src="@drawable/geraldo" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -178,9 +178,8 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginTop="16dp"
                 android:adjustViewBounds="true"
-                android:background="@drawable/didico"
                 android:scaleType="centerCrop"
-                tools:srcCompat="@drawable/didico" />
+                android:src="@drawable/didico" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -191,7 +190,7 @@
                 android:adjustViewBounds="true"
                 android:background="@drawable/geraldo"
                 android:scaleType="centerCrop"
-                tools:srcCompat="@drawable/geraldo" />
+                android:src="@drawable/geraldo" />
 
         </LinearLayout>
     </HorizontalScrollView>

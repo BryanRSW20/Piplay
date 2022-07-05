@@ -9,26 +9,24 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-
-
-public class HomeActivity extends Activity {
+public class EventActivity extends Activity {
 
     private BottomNavigationView BottomNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_activity);
+        setContentView(R.layout.activity_eventos);
 
         BottomNav = (BottomNavigationView) findViewById(R.id.BottomNav);
-        BottomNav.setSelectedItemId(R.id.page_home);
+        BottomNav.setSelectedItemId(R.id.page_events);
         BottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId())
                 {
-                    case R.id.page_events:
-                        startActivity(new Intent(getApplicationContext(),EventActivity.class ));
+                    case R.id.page_home:
+                        startActivity(new Intent(getApplicationContext(),HomeActivity.class ));
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.page_sales:
@@ -39,6 +37,7 @@ public class HomeActivity extends Activity {
                 return false;
             }
         });
-
     }
+
+
 }
