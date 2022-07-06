@@ -6,30 +6,34 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 
-public class HomeActivity extends Activity {
-
-    private BottomNavigationView BottomNav;
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_activity);
 
-        BottomNav = (BottomNavigationView) findViewById(R.id.BottomNav);
-        BottomNav.setSelectedItemId(R.id.page_home);
-        BottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.BottomNav);
+
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.BottomNav);
+        bottomNavigationView.setSelectedItemId(R.id.page_home);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId())
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId())
                 {
                     case R.id.page_events:
                         startActivity(new Intent(getApplicationContext(),EventActivity.class ));
                         overridePendingTransition(0,0);
+                        return true;
+                    case R.id.page_home:
                         return true;
                     case R.id.page_sales:
                         startActivity(new Intent(getApplicationContext(), SaleActivity.class));

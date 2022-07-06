@@ -1,20 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/page_home"
-        android:enabled="true"
-        android:textColor="@color/piplay_txt_color"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="Home"/>
     <item
         android:id="@+id/page_events"
-        android:enabled="false"
-        android:textColor="@color/piplay_white"
         android:icon="@drawable/ic_event_black_24dp"
-        android:title="Eventos"/>
+        android:title="Eventos" />
     <item
         android:id="@+id/page_sales"
-        android:enabled="false"
-        android:textColor="@color/piplay_white"
         android:icon="@drawable/ic_attach_money_black_24dp"
-        android:title="Ofertas"/>
+        android:title="Ofertas" />
 </menu>

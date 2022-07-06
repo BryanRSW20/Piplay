@@ -86,12 +86,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/piplay_bg_light"
-        app:itemIconTint="@color/piplay_txt_color"
-        app:itemTextColor="@color/piplay_txt_color"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/menu_navigation" />
 
     <TextView
         android:id="@+id/textView7"
