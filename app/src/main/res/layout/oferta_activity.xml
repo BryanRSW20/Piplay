@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     android:background="@color/piplay_bg">
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="211dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/advent_pro"
+        android:text="PiPlay"
+        android:textColor="@color/piplay_txt_color"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/BottomNav"
         android:layout_width="match_parent"
@@ -20,17 +34,4 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="317dp"
-        android:layout_marginBottom="369dp"
-        android:text="Alô?"
-        android:textColor="@color/piplay_white"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
