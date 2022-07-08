@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,25 +26,26 @@ public class HomeActivity extends AppCompatActivity {
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.BottomNav);
         bottomNavigationView.setSelectedItemId(R.id.page_home);
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId())
-                {
+                switch (item.getItemId()) {
                     case R.id.page_events:
-                        startActivity(new Intent(getApplicationContext(),EventActivity.class ));
-                        overridePendingTransition(0,0);
+                        startActivity(new Intent(getApplicationContext(), EventoActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                     case R.id.page_home:
                         return true;
                     case R.id.page_sales:
-                        startActivity(new Intent(getApplicationContext(), SaleActivity.class));
-                        overridePendingTransition(0, 0);
+                        startActivity(new Intent(getApplicationContext(), OfertaActivity.class));
                         return true;
                 }
                 return false;
             }
         });
+
+
 
     }
 }

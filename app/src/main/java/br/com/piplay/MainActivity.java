@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        switchToHomeActivity = findViewById(R.id.trocaTela);
+        switchToHomeActivity = findViewById(R.id.pularEtapa);
         switchToHomeActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

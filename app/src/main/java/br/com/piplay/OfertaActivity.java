@@ -6,20 +6,20 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class SaleActivity extends AppCompatActivity {
-
-
+public class OfertaActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sales);
+        setContentView(R.layout.oferta_activity);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.BottomNav);
+
+        bottomNavigationView = (BottomNavigationView) findViewById(R.id.BottomNav);
         bottomNavigationView.setSelectedItemId(R.id.page_sales);
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -31,8 +31,7 @@ public class SaleActivity extends AppCompatActivity {
                     case R.id.page_sales:
                         return true;
                     case R.id.page_events:
-                        startActivity(new Intent(getApplicationContext(), EventActivity.class));
-                        overridePendingTransition(0, 0);
+                        startActivity(new Intent(getApplicationContext(), EventoActivity.class));
                         return true;
                 }
                 return false;
