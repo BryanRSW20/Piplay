@@ -21,6 +21,7 @@
         <activity android:name=".HomeActivity"/>
         <activity android:name=".EventoActivity"/>
         <activity android:name=".OfertaActivity"/>
+        <activity android:name=".EventoExpandActivity"/>
     </application>
 
 </manifest>
