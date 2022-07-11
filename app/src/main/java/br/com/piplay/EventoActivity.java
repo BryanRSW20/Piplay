@@ -26,7 +26,7 @@ public class EventoActivity extends AppCompatActivity {
         expandDetails.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                expandActivity();
             }
         });
 
@@ -54,4 +54,9 @@ public class EventoActivity extends AppCompatActivity {
             }
         });
     }
+    private void expandActivity(){
+        Intent expandActivityIntent = new Intent(this, EventoExpandActivity.class);
+        startActivity(expandActivityIntent);
+    }
+
 }
