@@ -48,6 +48,7 @@ public class EventoActivity extends AppCompatActivity {
                         return true;
                     case R.id.page_sales:
                         startActivity(new Intent(getApplicationContext(), OfertaActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;

@@ -60,7 +60,7 @@
         android:layout_marginTop="13dp"
         android:text="Desenvolvido com muito ódio pelo Android Studio por"
         android:textColor="@color/piplay_white"
-        android:textSize="16sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />

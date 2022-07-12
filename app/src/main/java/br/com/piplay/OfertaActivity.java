@@ -1,15 +1,15 @@
 package br.com.piplay;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class OfertaActivity extends Activity {
+public class OfertaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +32,7 @@ public class OfertaActivity extends Activity {
                         return true;
                     case R.id.page_events:
                         startActivity(new Intent(getApplicationContext(), EventoActivity.class));
+                        overridePendingTransition(0, 0);
                         return true;
                 }
                 return false;

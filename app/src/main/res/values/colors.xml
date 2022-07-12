@@ -7,4 +7,5 @@
     <color name="piplay_txt_color">#8C52FF</color>
     <color name="piplay_bg_light">#3C3C3C</color>
     <color name="piplay_white">#FFFFFF</color>
+    <color name="piplay_bg_moreOrLess">#464646</color>
 </resources>
