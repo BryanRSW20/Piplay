@@ -17,8 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/piplay_bg_light"
-            android:elevation="@dimen/cardview_default_elevation"
-            app:elevation="12dp"
+            app:elevation="24dp"
             app:itemIconTint="@drawable/selector"
             app:itemTextColor="@drawable/selector"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -44,8 +43,8 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="192dp"
-            android:layout_height="192dp"
+            android:layout_width="165dp"
+            android:layout_height="159dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/circle"
@@ -70,68 +69,53 @@
             app:layout_constraintStart_toEndOf="@+id/imageView5"
             app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
-        <TableLayout
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:background="@android:drawable/editbox_background"
-            android:backgroundTint="@color/piplay_bg_moreOrLess"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical"
             android:textAlignment="center"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView26">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="68dp"
+                android:gravity="center|center_horizontal"
+                android:paddingLeft="50dp"
+                android:text="Amanhã, 10:00"
+                android:textAlignment="center"
+                android:textColor="@color/piplay_white" />
 
-            </TableRow>
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="56dp"
+                android:gravity="center"
+                android:paddingLeft="50dp"
+                android:text="Site do Evento"
+                android:textAlignment="gravity"
+                android:textColor="@color/piplay_white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginEnd="68dp"
-                    android:text="Amanhã, 10:00"
-                    android:textColor="@color/piplay_white" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView32"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="56dp"
-                    android:text="Site do Evento"
-                    android:textColor="@color/piplay_white"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/textView33"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="56dp"
-                    android:linksClickable="false"
-                    android:text="Google Classroom"
-                    android:textColor="@color/piplay_txt_color" />
-            </TableRow>
-        </TableLayout>
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="56dp"
+                android:gravity="center"
+                android:linksClickable="false"
+                android:paddingLeft="50dp"
+                android:text="Google Classroom"
+                android:textColor="@color/piplay_txt_color" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/textView36"

@@ -47,8 +47,10 @@
         android:layout_height="128dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:background="@color/ic_launcher_background"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/ic_launcher_background"
         android:cropToPadding="false"
+        android:elevation="24dp"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView19"
@@ -82,11 +84,12 @@
         android:layout_height="128dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
-        android:background="@color/ic_launcher_background"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/ic_launcher_background"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toEndOf="@+id/imageView12"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@android:drawable/ic_delete" />
 
     <TextView
         android:id="@+id/textView30"
@@ -182,11 +185,12 @@
         android:layout_height="128dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
-        android:background="@color/ic_launcher_background"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/ic_launcher_background"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@android:drawable/ic_delete" />
 
     <TextView
         android:id="@+id/textView24"
@@ -216,11 +220,12 @@
         android:layout_height="128dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
-        android:background="@color/ic_launcher_background"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/ic_launcher_background"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@android:drawable/btn_dialog" />
+        app:srcCompat="@android:drawable/ic_delete" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
